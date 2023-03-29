@@ -9,7 +9,7 @@ st.set_page_config(page_title="Xhr Analysis",
 if 'count' not in st.session_state:
     st.session_state.count = 0
 
-@st.cache_resource(show_spinner=False, ttl=60*60*24)
+#@st.cache_resource(show_spinner=False, ttl=60*60*24)
 def get_df():
     df = pd.read_csv('https://github.com/enzobo/analysis/blob/main/xhr.py?raw=true')
     return df
