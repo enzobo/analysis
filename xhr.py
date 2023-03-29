@@ -11,7 +11,7 @@ if 'count' not in st.session_state:
 
 @st.cache_resource(show_spinner=False, ttl=60*60*24)
 def get_df():
-    df = pd.read_csv('https://raw.githubusercontent.com/enzobo/analysis/main/test_streamlit.csv?token=GHSAT0AAAAAACAGE5YFZEG2FDJNLC765RWKZBERR2A')
+    df = pd.read_csv('https://github.com/enzobo/analysis/blob/main/xhr.py?raw=true')
     return df
 
 def add_count():
